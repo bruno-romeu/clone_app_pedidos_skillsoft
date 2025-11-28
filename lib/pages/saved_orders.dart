@@ -6,30 +6,49 @@ class SavedOrders extends StatefulWidget {
 }
 
 class ButtonTypesGroup extends StatelessWidget {
-  const ButtonTypesGroup({super.key, this.onDiscard, this.onModify});
+  const ButtonTypesGroup({
+    super.key,
+    required this.enabled,
+    required this.onDiscard,
+    required this.onModify,
+  });
+  final bool enabled;
+  final VoidCallback onDiscard;
+  final VoidCallback onModify;
 
-  final VoidCallback? onDiscard;
-  final VoidCallback? onModify;
+  static const Color discardColor = Color.fromARGB(255, 253, 49, 34);
+  static const Color modifyColor = Color.fromARGB(255, 255, 147, 7);
 
   @override
   Widget build(BuildContext context) {
+    final VoidCallback? discardPressed = enabled ? onDiscard : null;
+    final VoidCallback? modifyPressed = enabled ? onModify : null;
+
+    final Color finalDiscardColor = enabled
+        ? discardColor
+        : const Color.fromARGB(82, 253, 49, 34).withValues(alpha: 0.5);
+
+    final Color finalModifyColor = enabled
+        ? modifyColor
+        : const Color.fromARGB(255, 7, 218, 255).withValues(alpha: 0.5);
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
         Expanded(
           child: FilledButton(
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(
-                const Color.fromARGB(255, 253, 49, 34),
+              backgroundColor: WidgetStateProperty.resolveWith<Color>((states) {
+                if (states.contains(WidgetState.disabled)) {
+                  return discardColor.withValues(alpha: 0.5);
+                }
+                return discardColor;
+              }),
+              shape: WidgetStateProperty.all(
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
               ),
-              shape: MaterialStateProperty.all(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadiusGeometry.circular(6),
-                ),
-              ),
-              
             ),
-            onPressed: onDiscard ?? () {},
+            onPressed: discardPressed,
             child: const Text('Descartar'),
           ),
         ),
@@ -37,16 +56,17 @@ class ButtonTypesGroup extends StatelessWidget {
         Expanded(
           child: FilledButton(
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(
-                const Color.fromARGB(255, 255, 147, 7),
-              ),
-              shape: MaterialStateProperty.all(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadiusGeometry.circular(6),
-                ),
+              backgroundColor: WidgetStateProperty.resolveWith<Color>((states) {
+                if (states.contains(WidgetState.disabled)) {
+                  return modifyColor.withValues(alpha: 0.5);
+                }
+                return modifyColor;
+              }),
+              shape: WidgetStateProperty.all(
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
               ),
             ),
-            onPressed: onModify ?? () {},
+            onPressed: modifyPressed,
             child: const Text('Alterar'),
           ),
         ),
@@ -64,8 +84,17 @@ class _SavedOrdersState extends State<SavedOrders> {
     });
   }
 
+  void _handleDiscard() {
+    print('Descartar pedido ID $_selectedOrder');
+  }
+
+  void _handleModify() {
+    print('Alterar pedido ID $_selectedOrder');
+  }
+
   @override
   Widget build(BuildContext context) {
+    final bool isOrderSelected = _selectedOrder != null;
     return Scaffold(
       appBar: AppBar(
         leading: Builder(
@@ -373,7 +402,11 @@ class _SavedOrdersState extends State<SavedOrders> {
       ),
       bottomNavigationBar: Container(
         padding: const EdgeInsets.all(12.0),
-        child: ButtonTypesGroup(),
+        child: ButtonTypesGroup(
+          enabled: isOrderSelected,
+          onDiscard: _handleDiscard,
+          onModify: _handleModify,
+        ),
       ),
     );
   }
