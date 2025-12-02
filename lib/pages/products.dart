@@ -1,3 +1,4 @@
+import 'package:clone_app_pedidos/components/product_card.dart';
 import 'package:flutter/material.dart';
 
 class Products extends StatelessWidget {
@@ -15,9 +16,26 @@ class Products extends StatelessWidget {
             );
           },
         ),
-        title: Text('Produtos'),
+        title: SizedBox(
+          child: TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: 'Pesquisar produto...',
+              suffixIcon: Icon(Icons.close),
+            ),
+          ),
+        ),
+        actions: [Icon(Icons.sort_by_alpha)],
+        elevation: 03,
+        shadowColor: Colors.black87,
+        backgroundColor: Colors.white,
       ),
-      body: Center(child: Text('Olá Mundo!')),
+      body: ListView.builder(
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          return ProductCard();
+        },
+      ),
     );
   }
 }
