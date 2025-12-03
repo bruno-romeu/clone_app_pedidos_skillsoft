@@ -24,14 +24,6 @@ class ButtonTypesGroup extends StatelessWidget {
     final VoidCallback? discardPressed = enabled ? onDiscard : null;
     final VoidCallback? modifyPressed = enabled ? onModify : null;
 
-    final Color finalDiscardColor = enabled
-        ? discardColor
-        : const Color.fromARGB(82, 253, 49, 34).withValues(alpha: 0.5);
-
-    final Color finalModifyColor = enabled
-        ? modifyColor
-        : const Color.fromARGB(255, 7, 218, 255).withValues(alpha: 0.5);
-
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
