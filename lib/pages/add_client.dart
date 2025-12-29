@@ -71,7 +71,6 @@ class _CadastroPageState extends State<AddClient> {
             ),
           ),
 
-          SizedBox(height: 20),
           Expanded(child: isPJ ? FormPJ() : FormPF()),
         ],
       ),
