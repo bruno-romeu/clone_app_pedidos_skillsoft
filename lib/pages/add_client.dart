@@ -14,8 +14,7 @@ class ToggleTipoPessoa extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      shadowColor: Colors.black87,
-      elevation: 5,
+      elevation: 2,
       borderRadius: BorderRadius.circular(100),
       child: SegmentedButton<bool>(
         showSelectedIcon: false,
@@ -26,12 +25,12 @@ class ToggleTipoPessoa extends StatelessWidget {
         selected: {isPJ},
         onSelectionChanged: (newSet) => onChanged(newSet.first),
         style: SegmentedButton.styleFrom(
-          backgroundColor: Colors.grey[400],
+          backgroundColor: Colors.grey[300],
           foregroundColor: Colors.grey[600],
           selectedForegroundColor: Colors.black,
           selectedBackgroundColor: Colors.white,
           side: BorderSide(color: Colors.transparent),
-          padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+          padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
           textStyle: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
@@ -92,7 +91,7 @@ class FormPJ extends StatelessWidget {
             children: [
               Text('CNPJ'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -109,7 +108,7 @@ class FormPJ extends StatelessWidget {
                           ),
                           padding: const EdgeInsets.symmetric(
                             horizontal: 30,
-                            vertical: 20,
+                            vertical: 10,
                           ),
                         ),
                       ),
@@ -127,7 +126,7 @@ class FormPJ extends StatelessWidget {
                           ),
                           padding: const EdgeInsets.symmetric(
                             horizontal: 20,
-                            vertical: 20,
+                            vertical: 10,
                           ),
                         ),
                       ),
@@ -135,19 +134,18 @@ class FormPJ extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 8),
+              SizedBox(height: 5),
 
               Text('Razão Social'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              SizedBox(height: 8),
-
+              SizedBox(height: 5),
               Text('Nome Fantasia'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              SizedBox(height: 8),
+              SizedBox(height: 5),
 
               Text('Endereço'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              SizedBox(height: 8),
+              SizedBox(height: 5),
 
               Row(
                 children: [
@@ -178,7 +176,7 @@ class FormPJ extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Row(
                 children: [
@@ -209,7 +207,7 @@ class FormPJ extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Row(
                 children: [
@@ -240,11 +238,11 @@ class FormPJ extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Text('Referência'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Row(
                 children: [
@@ -275,23 +273,23 @@ class FormPJ extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Text('Whatsapp'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Text('E-Mail'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Text('Inscrição Estadual'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Text('Observação'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -312,7 +310,7 @@ class FormPJ extends StatelessWidget {
                       ),
                       padding: const EdgeInsets.symmetric(
                         horizontal: 50,
-                        vertical: 20,
+                        vertical: 10,
                       ),
                     ),
                   ),
@@ -338,7 +336,7 @@ class FormPF extends StatelessWidget {
             children: [
               Text('CPF'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Center(
                 child: FilledButton(
@@ -351,24 +349,24 @@ class FormPF extends StatelessWidget {
                     ),
                     padding: const EdgeInsets.symmetric(
                       horizontal: 20,
-                      vertical: 20,
+                      vertical: 10,
                     ),
                   ),
                 ),
               ),
-              SizedBox(height: 8),
+              SizedBox(height: 5),
 
               Text('Nome'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              SizedBox(height: 8),
+              SizedBox(height: 5),
 
               Text('Nome Fantasia'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              SizedBox(height: 8),
+              SizedBox(height: 5),
 
               Text('Endereço'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              SizedBox(height: 8),
+              SizedBox(height: 5),
 
               Row(
                 children: [
@@ -399,7 +397,7 @@ class FormPF extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Row(
                 children: [
@@ -430,7 +428,7 @@ class FormPF extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Row(
                 children: [
@@ -461,11 +459,11 @@ class FormPF extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Text('Referência'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Row(
                 children: [
@@ -496,23 +494,23 @@ class FormPF extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Text('Whatsapp'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Text('E-Mail'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Text('Inscrição Estadual'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Text('Observação'),
               TextField(style: TextStyle(decorationColor: Colors.blue[800])),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
 
               Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -533,7 +531,7 @@ class FormPF extends StatelessWidget {
                       ),
                       padding: const EdgeInsets.symmetric(
                         horizontal: 50,
-                        vertical: 20,
+                        vertical: 10,
                       ),
                     ),
                   ),

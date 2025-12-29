@@ -14,12 +14,15 @@ class menuDrawer extends StatelessWidget {
               style: TextStyle(color: Colors.black, fontSize: 24),
             ),
           ),
-          Text(
-            'Início',
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w100,
-              color: Colors.grey,
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+              'Início',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.normal,
+                color: Colors.grey[700],
+              ),
             ),
           ),
           ListTile(
@@ -30,27 +33,36 @@ class menuDrawer extends StatelessWidget {
               Navigator.pushReplacementNamed(context, '/');
             },
           ),
-          ListTile(leading: Icon(Icons.attach_money), title: Text('Vender'),
-          onTap: () {
+          ListTile(
+            leading: Icon(Icons.attach_money),
+            title: Text('Vender'),
+            onTap: () {
               Navigator.pop(context);
               Navigator.pushReplacementNamed(context, '/sale');
-            },),
+            },
+          ),
 
           Divider(),
 
-          Text(
-            'Dados',
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w100,
-              color: Colors.grey,
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+              'Dados',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.normal,
+                color: Colors.grey[700],
+              ),
             ),
           ),
-          ListTile(leading: Icon(Icons.person), title: Text('Clientes'),
-          onTap: () {
+          ListTile(
+            leading: Icon(Icons.person),
+            title: Text('Clientes'),
+            onTap: () {
               Navigator.pop(context);
               Navigator.pushReplacementNamed(context, '/clients');
-            },),
+            },
+          ),
           ListTile(
             leading: Icon(Icons.person_add),
             title: Text('Cadastrar Cliente'),
@@ -94,12 +106,15 @@ class menuDrawer extends StatelessWidget {
 
           Divider(),
 
-          Text(
-            'Configurações',
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w100,
-              color: Colors.grey,
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+              'Configurações',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.normal,
+                color: Colors.grey[700],
+              ),
             ),
           ),
           ListTile(

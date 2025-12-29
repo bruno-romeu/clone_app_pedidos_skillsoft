@@ -26,23 +26,23 @@ class ToolsPage extends StatelessWidget {
         children: <Widget>[
           Container(
             width: double.infinity,
-            color: Colors.grey[800],
+            color: Colors.grey[600],
             padding: EdgeInsets.all(10),
             child: Text(
               'CADASTROS',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: FontWeight.w600,
               ),
             ),
           ),
           ListTile(
             tileColor: Colors.white,
-            contentPadding: EdgeInsets.all(8),
+            contentPadding: EdgeInsets.only(left: 16, right: 16),
             title: Text(
               'Gerar Catálogo dos Produtos',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
             ),
             subtitle: Text(
               'Gera um catálogo em PDF dos Produtos Enviados para o APP.',

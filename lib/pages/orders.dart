@@ -120,7 +120,7 @@ class Orders extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Colors.grey[200],
       appBar: AppBar(
         leading: Builder(
           builder: (BuildContext context) {

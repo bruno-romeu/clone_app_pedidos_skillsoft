@@ -131,15 +131,15 @@ class _SavedOrdersState extends State<SavedOrders> {
                         Text(
                           'Emissão: 17/11/2025',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                         Text(
                           'Entrega: 29/11/2025',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                       ],
@@ -150,8 +150,8 @@ class _SavedOrdersState extends State<SavedOrders> {
                         Text(
                           'Obs.: Adicionar 5% de desconto no total',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                       ],
@@ -161,8 +161,8 @@ class _SavedOrdersState extends State<SavedOrders> {
                         Text(
                           'Desconto: 0,00',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                       ],
@@ -174,21 +174,21 @@ class _SavedOrdersState extends State<SavedOrders> {
                         Text(
                           'Produtos: 56,90',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                         Text(
                           'Flex: 2,39',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                         Text(
                           'Total: 59,29',
                           style: TextStyle(
-                            fontSize: 14,
+                            fontSize: 13,
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
@@ -225,15 +225,15 @@ class _SavedOrdersState extends State<SavedOrders> {
                         Text(
                           'Emissão: 09/11/2025',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                         Text(
                           'Entrega: 12/11/2025',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                       ],
@@ -244,8 +244,8 @@ class _SavedOrdersState extends State<SavedOrders> {
                         Text(
                           'Obs.: Cliente vai mandar o pix depois.',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                       ],
@@ -255,8 +255,8 @@ class _SavedOrdersState extends State<SavedOrders> {
                         Text(
                           'Desconto: 3,90',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                       ],
@@ -268,21 +268,21 @@ class _SavedOrdersState extends State<SavedOrders> {
                         Text(
                           'Produtos: 37,80',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                         Text(
                           'Flex: -3,90',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                         Text(
                           'Total: 33,90',
                           style: TextStyle(
-                            fontSize: 14,
+                            fontSize: 13,
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
@@ -319,15 +319,15 @@ class _SavedOrdersState extends State<SavedOrders> {
                         Text(
                           'Emissão: 22/10/2025',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                         Text(
                           'Entrega: 25/10/2025',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                       ],
@@ -338,8 +338,8 @@ class _SavedOrdersState extends State<SavedOrders> {
                         Text(
                           'Obs.: ',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                       ],
@@ -349,8 +349,8 @@ class _SavedOrdersState extends State<SavedOrders> {
                         Text(
                           'Desconto: 0,00',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                       ],
@@ -362,21 +362,21 @@ class _SavedOrdersState extends State<SavedOrders> {
                         Text(
                           'Produtos: 85,20',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                         Text(
                           'Flex: 7,97',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[500],
+                            fontSize: 13,
+                            color: Colors.grey[700],
                           ),
                         ),
                         Text(
                           'Total: 93,17',
                           style: TextStyle(
-                            fontSize: 14,
+                            fontSize: 13,
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),

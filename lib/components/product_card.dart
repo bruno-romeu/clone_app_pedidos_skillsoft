@@ -6,10 +6,10 @@ class ProductCard extends StatelessWidget {
     return Column(
       children: [
         ListTile(
-          leading: Icon(Icons.shopping_cart, size: 60),
+          leading: Icon(Icons.shopping_cart, size: 50),
           title: Text(
             'BISCOITO RECHEADO GLUB 100G CHOCOLATE',
-            style: TextStyle(color: Colors.black),
+            style: TextStyle(color: Colors.black, fontSize: 14),
           ),
           subtitle: Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -21,8 +21,9 @@ class ProductCard extends StatelessWidget {
                   Text(
                     '#1809',
                     style: TextStyle(
-                      color: Colors.grey[600],
+                      color: Colors.grey[500],
                       fontWeight: FontWeight.bold,
+                      fontSize: 15,
                     ),
                   ),
                 ],
@@ -31,7 +32,7 @@ class ProductCard extends StatelessWidget {
                 children: [
                   Text(
                     'Estoque: 257',
-                    style: TextStyle(fontSize: 14, color: Colors.grey[600]),
+                    style: TextStyle(fontSize: 15, color: Colors.grey[500]),
                   ),
                 ],
               ),
@@ -40,7 +41,7 @@ class ProductCard extends StatelessWidget {
                   Text(
                     '1,29',
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
                     ),
